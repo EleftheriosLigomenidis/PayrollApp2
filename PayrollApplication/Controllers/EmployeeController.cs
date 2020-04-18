@@ -135,10 +135,7 @@ namespace PayrollApp.Controllers
         }
 
 
-        private static void SaveFile()
-        {
-
-        }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(EmployeeEditViewModel model)
