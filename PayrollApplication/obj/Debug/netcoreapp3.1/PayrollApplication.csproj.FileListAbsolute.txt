@@ -161,3 +161,5 @@ C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplicatio
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\.filenesting.json
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs

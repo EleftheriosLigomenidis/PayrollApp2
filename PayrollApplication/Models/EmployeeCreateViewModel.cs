@@ -11,58 +11,51 @@ namespace PayrollApplication.Models
     public class EmployeeCreateViewModel
     {
         public int Id { get; set; }
-        [Required(ErrorMessage ="Employee Message required"),RegularExpression(@"^[A-Z] {3,3} [0-9] {3}$")] //uppercase only aplphabetical chars max and mix 3 and numbers 0-9 min 3
-
+        [Required(ErrorMessage = "Employee Number is required"),
+            RegularExpression(@"^[A-Z]{3,3}[0-9]{3}$")]
         public string EmployeeNo { get; set; }
-        [Required(ErrorMessage = "first name is required"), StringLength(50,MinimumLength =2),Display(Name ="First Name")]
-        [RegularExpression(@"^[A-Z] [a-zA-Z""'\s-]*$")] //first char must be capital rest of char a-z or A-Z position mark contain dashes or spaces *=zero or many on the left
+        [Required(ErrorMessage = "First Name is required"), StringLength(50, MinimumLength = 2)]
+        [RegularExpression(@"^[A-Z][a-zA-Z""'\s-]*$"), Display(Name = "First Name")]
         public string FirstName { get; set; }
-        [StringLength(50), Display(Name ="Middle Name")]
+        [StringLength(50), Display(Name = "Middle Name")]
         public string MiddleName { get; set; }
-        [Required(ErrorMessage = "first name is required"), StringLength(50, MinimumLength = 2), Display( Name ="First Name")]
-        [RegularExpression(@"^[A-Z] [a-zA-Z""'\s-]*$")]
+        [Required(ErrorMessage = "Last Name is required"), StringLength(50, MinimumLength = 2)]
+        [RegularExpression(@"^[A-Z][a-zA-Z""'\s-]*$"), Display(Name = "Last Name")]
         public string LastName { get; set; }
-        [Required, MaxLength(50)]
-        public string FullName {
-            get{
-                
-             return FirstName +(String.IsNullOrEmpty(MiddleName)?" " :(" "+ (char?)MiddleName[0] + ".").ToUpper())+ LastName;
-                    
-                    } 
-        } // could be 
-
-
-
-        public string Gender { get; set; } // may be enum
-        [Display(Name ="Photo")]
+        public string FullName
+        {
+            get
+            {
+                return FirstName + (string.IsNullOrEmpty(MiddleName) ? " " : (" " + (char?)MiddleName[0] + ". ").ToUpper()) + LastName;
+            }
+        }
+        public string Gender { get; set; }
+        [Display(Name = "Photo")]
         public IFormFile ImageUrl { get; set; }
-        [DataType(DataType.Date),Display(Name ="Date of birth")]
+        [DataType(DataType.Date), Display(Name = "Date Of Birth")]
         public DateTime DateOfBirth { get; set; }
-        [DataType(DataType.Date), Display(Name = "Date of birth")]
-        public DateTime DateJoined { get; set; } = DateTime.Now; // INITIALIZE
-      [Required,MaxLength(50)]
+        [DataType(DataType.Date), Display(Name = "Date Joined")]
+        public DateTime DateJoined { get; set; } = DateTime.UtcNow;
+        public string PhoneNumber { get; set; }
+        [Required(ErrorMessage = "Job Role is required"), StringLength(100)]
         public string Designation { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        [Required, MaxLength(50),Display(Name = "National Insurance Number"),RegularExpression(@"^[A-CEGHJ-PR-TW-Z] {1} [A-CEGHJ-NPR-TW-Z] {1} [0-9] {6} [A-D\s]$")] // first can be any letter from A-C EXCLUDING D anything from j-p cannot be u 
-        
+
+        [Required, StringLength(50), Display(Name = "NI No.")]
+        [RegularExpression(@"^[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-NPR-TW-Z]{1}[0-9]{6}[A-D\s]$")]
         public string NationalInsuranceNumber { get; set; }
-        [Display(Name ="Payment Method")]
+        [Display(Name = "Payment Method")]
         public PaymentMathod PaymentMathod { get; set; }
         [Display(Name = "Student Loan")]
-        public StudentLoan StudentLoan { get; set; } // could be a bool
+        public StudentLoan StudentLoan { get; set; }
         [Display(Name = "Union Member")]
-        public UnionMember UnionMember { get; set; } // could be abool
-        [Required, MaxLength(150)]
-
+        public UnionMember UnionMember { get; set; }
+        [Required, StringLength(150)]
         public string Address { get; set; }
-        [Required, MaxLength(50)]
+        [Required, StringLength(50)]
         public string City { get; set; }
-        [Required, MaxLength(50),Display( Name = "Post Code")]
+        [Required, StringLength(50)]
         public string PostCode { get; set; }
-
-        public IEnumerable<PaymentRecord> PaymentRecords { get; set; }
-
-        public string PhoneNumber { get; set; }
     }
 }
