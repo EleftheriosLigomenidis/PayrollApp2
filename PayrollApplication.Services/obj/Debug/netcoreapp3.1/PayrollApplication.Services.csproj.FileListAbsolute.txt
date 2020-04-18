@@ -1,0 +1,13 @@
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Services.deps.json
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Services.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Services.pdb
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Entity.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Persistence.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Entity.pdb
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\bin\Debug\netcoreapp3.1\PayrollApplication.Persistence.pdb
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.csprojAssemblyReference.cache
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.AssemblyInfoInputs.cache
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.AssemblyInfo.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.csproj.CopyComplete
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Services\obj\Debug\netcoreapp3.1\PayrollApplication.Services.pdb

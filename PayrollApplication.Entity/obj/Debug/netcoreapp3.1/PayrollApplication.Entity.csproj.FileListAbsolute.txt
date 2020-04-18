@@ -1,0 +1,8 @@
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\bin\Debug\netcoreapp3.1\PayrollApplication.Entity.deps.json
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\bin\Debug\netcoreapp3.1\PayrollApplication.Entity.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\bin\Debug\netcoreapp3.1\PayrollApplication.Entity.pdb
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\obj\Debug\netcoreapp3.1\PayrollApplication.Entity.csprojAssemblyReference.cache
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\obj\Debug\netcoreapp3.1\PayrollApplication.Entity.AssemblyInfoInputs.cache
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\obj\Debug\netcoreapp3.1\PayrollApplication.Entity.AssemblyInfo.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\obj\Debug\netcoreapp3.1\PayrollApplication.Entity.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication.Entity\obj\Debug\netcoreapp3.1\PayrollApplication.Entity.pdb
