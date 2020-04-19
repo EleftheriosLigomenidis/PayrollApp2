@@ -103,5 +103,10 @@ namespace PayrollApplication.Controllers
             ViewBag.employees = _employeeService.GetAllEmployesForPaymentProccesing();
             return View();
         }
+
+        public IActionResult Detail(int id)
+        {
+            return View();
+        }
     }
 }
