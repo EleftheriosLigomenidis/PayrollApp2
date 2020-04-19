@@ -33,5 +33,10 @@ namespace PayrollApplication.Controllers
             } ).ToList(); 
             return View(payRecords);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
