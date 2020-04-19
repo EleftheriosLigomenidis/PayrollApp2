@@ -22,8 +22,8 @@ namespace PayrollApplication.Models
         [DataType(DataType.Date), Display(Name = "Pay Date")]
         public DateTime PaymentDate { get; set; } 
         [Display(Name = "Pay Month")]
-        public string PayMonth { get; set; } 
-
+        public string PayMonth { get; set; }
+        public string Year { get; set; }
         [Display(Name = "Tax Year")]
         public int TaxYearId { get; set; }
         public TaxYear TaxYear { get; set; }
@@ -37,6 +37,8 @@ namespace PayrollApplication.Models
         public decimal ContractualHours { get; set; }
         [Display(Name = "Overtime Hours")]
         public decimal OvertimeHours { get; set; }
+        [Display(Name = "Overtime Rate")]
+        public decimal OverTimeRate { get; set; }
         [Display(Name = "Contractual Earnings")]
         public decimal ContractualEarnings { get; set; }
         [Display(Name = "Overtime Earnings")]

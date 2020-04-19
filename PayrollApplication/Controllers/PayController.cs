@@ -106,7 +106,42 @@ namespace PayrollApplication.Controllers
 
         public IActionResult Detail(int id)
         {
-            return View();
+            var paymentRecord = _service.GetById(id);
+            if(paymentRecord == null)
+            {
+                return NotFound();
+            }
+            var model = new PaymentRecordDetailViewModel()
+            {
+                Id = paymentRecord.Id,
+                EmployeeId = paymentRecord.EmployeeId,
+                FullName = paymentRecord.FullName,
+                Nino = paymentRecord.Nino,
+                PaymentDate = paymentRecord.PaymentDate,
+                PayMonth = paymentRecord.PayMonth,
+                Year = _service.GetTaxYearById(paymentRecord.TaxYearId).YearOfTax,
+                TaxCode = paymentRecord.TaxCode,
+                HourlyRate = paymentRecord.HourlyRate,
+                HourseWorked = paymentRecord.HourseWorked,
+                ContractualHours = paymentRecord.ContractualHours,
+                OvertimeHours = paymentRecord.OvertimeHours,
+                OverTimeRate = _service.OvertimeRate(paymentRecord.HourlyRate),
+                OvertimeEarnings = paymentRecord.OvertimeEarnings,
+                ContractualEarnings = paymentRecord.ContractualEarnings,
+                Tax = paymentRecord.Tax,
+                NIC = paymentRecord.NIC,
+                UnionFee = paymentRecord.UnionFee,
+                SLC = paymentRecord.SLC,
+                TotalDeduction = paymentRecord.TotalDeduction,
+                TotalEarning = paymentRecord.TotalEarning,
+                Employee = paymentRecord.Employee,
+                TaxYear = paymentRecord.TaxYear,
+                NetPayment = paymentRecord.NetPayment
+
+
+
+            };
+            return View(model);
         }
     }
 }
