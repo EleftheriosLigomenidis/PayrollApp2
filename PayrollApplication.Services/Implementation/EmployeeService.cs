@@ -1,4 +1,5 @@
-﻿using PayrollApplication.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using PayrollApplication.Entity;
 using PayrollApplication.Persistence;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,14 @@ namespace PayrollApplication.Services.Implementation
     {
         private readonly ApplicationDbContext _context;
         private decimal studentLoanAmount;
-       
+        public IEnumerable<SelectListItem> GetAllEmployesForPaymentProccesing()
+        {
+            return GetAll().Select(e => new SelectListItem()
+            {
+                Text = e.FirstName,
+                Value = e.Id.ToString()
+            }); 
+        }
         public EmployeeService(ApplicationDbContext context)
         {
             _context = context;

@@ -39,7 +39,8 @@ namespace PayrollApplication.Services.Implementation
         }
 
         public IEnumerable<PaymentRecord> GetAll() => _context.PaymentRecords.OrderBy(p => p.EmployeeId);
-        
+
+       
 
         public IEnumerable<SelectListItem> GetAllTaxYear()
         {

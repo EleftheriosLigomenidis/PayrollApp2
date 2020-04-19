@@ -1,4 +1,5 @@
-﻿using PayrollApplication.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using PayrollApplication.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,7 @@ namespace PayrollApplication.Services
 {
     public interface IEmployeeService
     {
+        IEnumerable<SelectListItem> GetAllEmployesForPaymentProccesing();
         Task CreateAsync(Employee employee);
 
         Employee GetById(int employeeId);

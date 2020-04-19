@@ -17,6 +17,7 @@ namespace PayrollApplication.Services
         TaxYear GetTaxYearById(int id);
         IEnumerable<PaymentRecord> GetAll();
         IEnumerable<SelectListItem> GetAllTaxYear();
+
         decimal OvertimeHours(decimal hoursWorked, decimal contractualHours);
         decimal ContractualEarnings(decimal contractualHours, decimal hoursWorked, decimal hourlyRate);
         decimal OvertimeRate(decimal hourlyRate);
