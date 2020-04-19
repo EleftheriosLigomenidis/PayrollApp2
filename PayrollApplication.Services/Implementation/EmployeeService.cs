@@ -12,7 +12,7 @@ namespace PayrollApplication.Services.Implementation
     {
         private readonly ApplicationDbContext _context;
         private decimal studentLoanAmount;
-        private decimal fee;
+       
         public EmployeeService(ApplicationDbContext context)
         {
             _context = context;
