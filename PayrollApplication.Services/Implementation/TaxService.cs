@@ -10,6 +10,7 @@ namespace PayrollApplication.Services.Implementation
         private decimal tax;
         public decimal TaxAmount(decimal totalAmount)
         {
+            //based on Uk
             if(totalAmount <= 1042)
             {
                 taxRate = .0m;
@@ -26,11 +27,14 @@ namespace PayrollApplication.Services.Implementation
             {
                 // higher tax rate
                 taxRate = .40m;
+                //income tax rate
                 tax = (1042 * .0m) + ((3125 - 1042) * .20m) + ((totalAmount - 3125) * taxRate);
             }
             else if(totalAmount > 12500)
             {
+                // highest tax rate
                 taxRate = .45m;
+                //income tax rate
                 tax = (1042 * .0m) + ((3125 - 1042) * .20m) + ((12500 - 3125) * .40m) + ((totalAmount - 12500) * taxRate);
             }
 
