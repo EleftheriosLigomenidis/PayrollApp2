@@ -14,9 +14,21 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="RotativaCore" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="WkHtmlToPdf\wkhtmlimage.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="WkHtmlToPdf\wkhtmltopdf.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
 
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PayrollApplication.Entity\PayrollApplication.Entity.csproj" />
     <ProjectReference Include="..\PayrollApplication.Services\PayrollApplication.Services.csproj" />

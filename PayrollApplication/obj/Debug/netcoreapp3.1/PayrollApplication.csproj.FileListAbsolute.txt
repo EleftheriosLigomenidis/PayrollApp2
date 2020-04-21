@@ -168,9 +168,12 @@ C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplicatio
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Delete.cshtml.g.cs
-C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Create.cshtml.g.cs
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Detail.cshtml.g.cs
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Payslip.cshtml.g.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\RotativaCore.dll
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\bin\Debug\netcoreapp3.1\WkHtmlToPdf\wkhtmltopdf.exe

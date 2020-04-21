@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using PayrollApplication.Entity;
 using PayrollApplication.Models;
 using PayrollApplication.Services;
+using RotativaCore;
 
 namespace PayrollApplication.Controllers
 {
@@ -97,12 +98,14 @@ namespace PayrollApplication.Controllers
 
                 };
               await  _service.CreateAsynch(payment);
-                RedirectToAction(nameof(Index));
+               return RedirectToAction(nameof(Index));
             }
+
             ViewBag.TaxYears = _service.GetAllTaxYear();
             ViewBag.employees = _employeeService.GetAllEmployesForPaymentProccesing();
             return View();
         }
+
         [HttpGet]
         public IActionResult Detail(int id)
         {
@@ -182,6 +185,15 @@ namespace PayrollApplication.Controllers
 
             };
             return View(model);
+        }
+
+        public IActionResult GeneratePayslipPdf(int id)
+        {
+            var payslip = new ActionAsPdf("Payslip", new { id = id })
+            {
+                FileName = "payslip.pdf"
+            };
+            return payslip;
         }
     }
 }
