@@ -171,3 +171,4 @@ C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplicatio
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\PayrollApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
+C:\Users\ligol\source\repos\EleftheriosLigomenidis\PayrollApp2\PayrollApplication\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Create.cshtml.g.cs
