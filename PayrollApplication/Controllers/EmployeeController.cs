@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting.Internal;
 using PayrollApplication.Entity;
 using PayrollApplication.Services;
 using PayrollApplication.Models;
+using PayrollApplication;
 
 namespace PayrollApp.Controllers
 {
@@ -22,7 +23,7 @@ namespace PayrollApp.Controllers
             _employeeService = employeeService;
             _env = hostingEnvironment;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? pageNumber )
         {
             var employees = _employeeService.GetAll().Select(e => new EmployeeIndexViewModel
             {
@@ -35,7 +36,9 @@ namespace PayrollApp.Controllers
                 City = e.City,
                 DateJoined = e.DateJoined
             }).ToList();
-            return View(employees);
+            int pageSize = 4;
+            return View(EmployeeListPagination<EmployeeIndexViewModel>.Create(employees,pageNumber ?? 1,pageSize));
+           
         }
         [HttpGet]
         public IActionResult Create()

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using PayrollApplication.Entity;
 using PayrollApplication.Persistence;
 using System;
@@ -40,7 +41,7 @@ namespace PayrollApplication.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<Employee> GetAll() => _context.Employees;
+        public IEnumerable<Employee> GetAll() => _context.Employees.AsNoTracking().OrderBy(e => e.FullName);
       
 
         public Employee GetById(int employeeId) => _context.Employees.Where(e => e.Id == employeeId).FirstOrDefault(); // using expression body

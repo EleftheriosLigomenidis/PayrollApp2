@@ -83,7 +83,7 @@ namespace PayrollApplication.Controllers
                     HourseWorked = model.HourseWorked,
                     ContractualHours = model.ContractualHours,
                     OvertimeHours = overtimeHrs = _service.OvertimeHours(model.HourseWorked, model.ContractualHours),
-                    ContractualEarnings = contractualEarnings = _service.ContractualEarnings(model.ContractualEarnings, model.HourseWorked, model.HourlyRate),
+                    ContractualEarnings = contractualEarnings = _service.ContractualEarnings(model.ContractualHours, model.HourseWorked, model.HourlyRate),
                     OvertimeEarnings = overTimeEarnings = _service.OvertimeEarnings(_service.OvertimeRate(model.HourlyRate), overtimeHrs),
                     TotalEarning = totalEarnings = _service.TotalEarnings(overTimeEarnings, contractualEarnings),
                     Tax = tax = _taxService.TaxAmount(totalEarnings),
