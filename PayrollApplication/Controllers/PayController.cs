@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PayrollApplication.Entity;
 using PayrollApplication.Models;
@@ -10,6 +11,7 @@ using RotativaCore;
 
 namespace PayrollApplication.Controllers
 {
+    [Authorize(Roles="Admin,Manager")]
     public class PayController : Controller
     {
         private readonly IPayComputationServices _service;
@@ -55,7 +57,7 @@ namespace PayrollApplication.Controllers
             } ).ToList(); 
             return View(payRecords);
         }
-
+        [Authorize(Roles ="Admin")]
         public IActionResult Create()
         {
             var model = new PaymentRecordCreateViewModel();
@@ -65,6 +67,7 @@ namespace PayrollApplication.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(PaymentRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -186,9 +189,10 @@ namespace PayrollApplication.Controllers
             };
             return View(model);
         }
-
+        [AllowAnonymous]
         public IActionResult GeneratePayslipPdf(int id)
         {
+            //!!!!!!!! THE IDENTITY treats the external library as an anonymous object so we need to decorate it with allow anonymous
             var payslip = new ActionAsPdf("Payslip", new { id = id })
             {
                 FileName = "payslip.pdf"

@@ -10,9 +10,11 @@ using PayrollApplication.Entity;
 using PayrollApplication.Services;
 using PayrollApplication.Models;
 using PayrollApplication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PayrollApp.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
